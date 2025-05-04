@@ -1,0 +1,17 @@
+<svg width="200" height="30" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ornamental divider with 1940s style -->
+  <line x1="10" y1="15" x2="190" y2="15" stroke="#5e3a1e" stroke-width="1.5"/>
+  
+  <!-- Left ornament -->
+  <path d="M10,15 C20,5 30,25 40,15" fill="none" stroke="#5e3a1e" stroke-width="1.5"/>
+  <circle cx="25" cy="15" r="3" fill="#a67744"/>
+  
+  <!-- Center ornament -->
+  <path d="M85,15 C95,5 105,25 115,15" fill="none" stroke="#5e3a1e" stroke-width="1.5"/>
+  <circle cx="100" cy="15" r="5" fill="#a67744"/>
+  <circle cx="100" cy="15" r="2" fill="#5e3a1e"/>
+  
+  <!-- Right ornament -->
+  <path d="M160,15 C170,5 180,25 190,15" fill="none" stroke="#5e3a1e" stroke-width="1.5"/>
+  <circle cx="175" cy="15" r="3" fill="#a67744"/>
+</svg>

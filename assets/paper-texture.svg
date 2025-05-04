@@ -1,0 +1,19 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <filter id="noise">
+    <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.5 0" />
+    <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+    <feBlend in="SourceGraphic" in2="monoNoise" mode="multiply" result="blend"/>
+  </filter>
+  
+  <rect width="500" height="500" fill="#f5efe0" filter="url(#noise)"/>
+  
+  <!-- Subtle stains -->
+  <circle cx="100" cy="150" r="50" fill="#e6dcc9" opacity="0.4"/>
+  <circle cx="400" cy="300" r="70" fill="#e4d9c2" opacity="0.3"/>
+  <circle cx="250" cy="450" r="60" fill="#e8ddc7" opacity="0.5"/>
+  
+  <!-- Very subtle fold lines -->
+  <line x1="0" y1="250" x2="500" y2="250" stroke="#e0d5bc" stroke-width="1" opacity="0.3"/>
+  <line x1="250" y1="0" x2="250" y2="500" stroke="#e0d5bc" stroke-width="1" opacity="0.3"/>
+</svg>

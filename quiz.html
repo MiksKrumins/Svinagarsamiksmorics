@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svina garša - Pārbaudi savas zināšanas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Special+Elite&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h1 class="site-title">Pārbaudi savas zināšanas</h1>
+            <nav>
+                <a href="navigation.html" class="navigation-btn">Izvēlne</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="quiz-section" class="content-area text-area">
+                <div id="question-container">
+                    <p id="question-text" class="placeholder-text"></p>
+                    <div class="button-group">
+                        <button onclick="checkAnswer(true)" class="navigation-btn">Patiess</button>
+                        <button onclick="checkAnswer(false)" class="navigation-btn">Nepatiess</button>
+                    </div>
+                </div>
+                <p id="feedback" style="margin-top: 20px; font-weight: bold;"></p>
+                <p id="score" style="margin-top: 10px;">Punkti: 0</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Miks Krūmiņš, Morics Jegi 9.3</p>
+        </footer>
+    </div>
+<script src="js/quiz.js"></script>
+</body>
+</html>
